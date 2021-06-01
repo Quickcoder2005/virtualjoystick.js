@@ -423,7 +423,3 @@ VirtualJoystick.prototype._check3D = function()
 	var exports = null != val && val.length && 'none' != val;
 	return exports;
 }
-
-function getAngle(joystick){
-	return Math.atan2(joystick.deltaY(), joystick.deltaX())*180/Math.PI + 90;
-}
