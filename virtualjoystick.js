@@ -425,5 +425,5 @@ VirtualJoystick.prototype._check3D = function()
 }
 
 function getAngle(joystick){
-	return -1 * (Math.atan2(joystick.deltaX(), joystick.deltaY())*180/Math.PI);
+	return Math.atan2(joystick.deltaY(), joystick.deltaX())*180/Math.PI;
 }
